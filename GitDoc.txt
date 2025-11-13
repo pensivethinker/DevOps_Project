@@ -1,0 +1,32 @@
+The STEPS below will help you Create Username, User email, Initialize Repository, Check
+Status, STAGE, ADD, COMMIT & PUSH code to GitHub from your local PC:
+STEP 1: Update "User Name"
+$git config --global user.name "Nadeem Siddiqi”
+STEP 2: Update "User Email"
+$git config --global user.email “nadeem.siddiqi@nit.academy”
+
+NOTE: If you omit "--global" the updates will only take place locally and not in other
+connected repositories
+STEP 3: If your local repository on your PC is not initialized then follow this step. Otherwise,
+skip to next STEP
+$git init
+STEP 4: Check on available files in your repo
+$git status
+STEP 5: Stage code/docs/files
+$git add pom.xml
+STEP 6: Save your work
+$commit –m “Maven-Jenkins Smoke Test using pom.xml file”
+$git log
+STEP 7: Check the name of your branch, it should be "master"
+$git branch
+STEP 9: ADD REMOTE REPO (GITHUB)
+$git remote add origin git@github.com:nitacademy/Projects.git (use the SSH path to your
+account)
+STEP 10: Push code from Local PC => GitHub (Remote Repository)
+$git push -u origin master
+
+Warning:
+$rm -rf .git => will remove all your files in your local repository. Please don’t use it unless
+you know what you are doing!
+Commands that Work:
+cd, ls, pwd
